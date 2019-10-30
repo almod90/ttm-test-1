@@ -27,6 +27,7 @@ module.exports = {
     ],
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
+        watchContentBase: true,
         hot: false,
         port: 9000
     }
