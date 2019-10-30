@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx webpack --config webpack.config.js",
+    "watch": "npx webpack --config webpack.config.js --watch",
+    "live": "webpack-dev-server --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/almod90/ttm-test-1/issues"
   },
-  "homepage": "https://github.com/almod90/ttm-test-1#readme"
+  "homepage": "https://github.com/almod90/ttm-test-1#readme",
+  "dependencies": {
+    "webpack": "^4.41.2",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.9"
+  }
 }
